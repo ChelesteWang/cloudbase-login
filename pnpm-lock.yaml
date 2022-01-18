@@ -1,20 +1,28 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@cloudbase/js-sdk': ^1.7.1
+  '@cloudbase/ui-react': ^1.0.5
   '@testing-library/jest-dom': ^5.16.1
   '@testing-library/react': ^12.1.2
   '@testing-library/user-event': ^13.5.0
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-router: ^6.2.1
+  react-router-dom: ^6.2.1
   react-scripts: 5.0.0
   web-vitals: ^2.1.3
 
 dependencies:
+  '@cloudbase/js-sdk': 1.7.1
+  '@cloudbase/ui-react': 1.0.5_react@17.0.2
   '@testing-library/jest-dom': 5.16.1
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 13.5.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-router: 6.2.1_react@17.0.2
+  react-router-dom: 6.2.1_react-dom@17.0.2+react@17.0.2
   react-scripts: 5.0.0_react@17.0.2
   web-vitals: 2.1.3
 
@@ -1379,6 +1387,103 @@ packages:
 
   /@bcoe/v8-coverage/0.2.3:
     resolution: {integrity: sha1-daLotRy3WKdVPWgEpZMteqznXDk=, tarball: '@bcoe/v8-coverage/download/@bcoe/v8-coverage-0.2.3.tgz'}
+    dev: false
+
+  /@cloudbase/adapter-interface/0.4.1:
+    resolution: {integrity: sha1-ksN+GoRNCWTdaGgGxwywDmzKuuI=, tarball: '@cloudbase/adapter-interface/download/@cloudbase/adapter-interface-0.4.1.tgz'}
+    dev: false
+
+  /@cloudbase/analytics/1.1.4:
+    resolution: {integrity: sha1-uMjfABPuBSyPU896NUb9J8U2hZM=, tarball: '@cloudbase/analytics/download/@cloudbase/analytics-1.1.4.tgz'}
+    dependencies:
+      '@cloudbase/functions': 1.3.4
+      '@cloudbase/types': 1.1.3-alpha.0
+    dev: false
+
+  /@cloudbase/app/1.4.1:
+    resolution: {integrity: sha1-KMV+4x55Kz0+/pMCLqVbJcwvlCk=, tarball: '@cloudbase/app/download/@cloudbase/app-1.4.1.tgz'}
+    dependencies:
+      '@cloudbase/adapter-interface': 0.4.1
+      '@cloudbase/types': 1.1.3-alpha.0
+      '@cloudbase/utilities': 1.3.4
+      cloudbase-adapter-wx_mp: 0.2.0
+    dev: false
+
+  /@cloudbase/auth/1.6.1:
+    resolution: {integrity: sha1-YiWQnhWP+dy8ImnaBRaRmRlOgQM=, tarball: '@cloudbase/auth/download/@cloudbase/auth-1.6.1.tgz'}
+    dependencies:
+      '@cloudbase/adapter-interface': 0.4.1
+      '@cloudbase/app': 1.4.1
+      '@cloudbase/types': 1.1.3-alpha.0
+      '@cloudbase/utilities': 1.3.4
+      sourcemapped-stacktrace: 1.1.11
+    dev: false
+
+  /@cloudbase/database/0.9.18-next:
+    resolution: {integrity: sha1-PIkZUSyJF4PzrKrXIo2i38/ZUdc=, tarball: '@cloudbase/database/download/@cloudbase/database-0.9.18-next.tgz'}
+    dependencies:
+      bson: 4.6.1
+      lodash.clonedeep: 4.5.0
+      lodash.set: 4.3.2
+      lodash.unset: 4.5.2
+    dev: false
+
+  /@cloudbase/functions/1.3.4:
+    resolution: {integrity: sha1-uKsGXdHrHccVMY3hXdeeSyjHd/U=, tarball: '@cloudbase/functions/download/@cloudbase/functions-1.3.4.tgz'}
+    dependencies:
+      '@cloudbase/adapter-interface': 0.4.1
+      '@cloudbase/types': 1.1.3-alpha.0
+      '@cloudbase/utilities': 1.3.4
+    dev: false
+
+  /@cloudbase/js-sdk/1.7.1:
+    resolution: {integrity: sha1-hsbs9JcaILV+FWwJQSkJaibBhT4=, tarball: '@cloudbase/js-sdk/download/@cloudbase/js-sdk-1.7.1.tgz'}
+    dependencies:
+      '@cloudbase/analytics': 1.1.4
+      '@cloudbase/app': 1.4.1
+      '@cloudbase/auth': 1.6.1
+      '@cloudbase/database': 0.9.18-next
+      '@cloudbase/functions': 1.3.4
+      '@cloudbase/realtime': 1.1.4-alpha.0
+      '@cloudbase/storage': 1.3.4
+      '@cloudbase/types': 1.1.3-alpha.0
+      '@cloudbase/utilities': 1.3.4
+    dev: false
+
+  /@cloudbase/realtime/1.1.4-alpha.0:
+    resolution: {integrity: sha1-IcU41d8V7nA/s3Zu5zOp1/dnZBY=, tarball: '@cloudbase/realtime/download/@cloudbase/realtime-1.1.4-alpha.0.tgz'}
+    dependencies:
+      '@cloudbase/types': 1.1.3-alpha.0
+    dev: false
+
+  /@cloudbase/storage/1.3.4:
+    resolution: {integrity: sha1-UiwoOtnLT8cn8GPE70ZTqXYvCJA=, tarball: '@cloudbase/storage/download/@cloudbase/storage-1.3.4.tgz'}
+    dependencies:
+      '@cloudbase/types': 1.1.3-alpha.0
+      '@cloudbase/utilities': 1.3.4
+    dev: false
+
+  /@cloudbase/types/1.1.3-alpha.0:
+    resolution: {integrity: sha1-rfdUxiD11Y+XWGOdDX9Pbz4SozA=, tarball: '@cloudbase/types/download/@cloudbase/types-1.1.3-alpha.0.tgz'}
+    dependencies:
+      '@cloudbase/adapter-interface': 0.4.1
+    dev: false
+
+  /@cloudbase/ui-react/1.0.5_react@17.0.2:
+    resolution: {integrity: sha1-Pcfhmo9tNukkybaRFccmwFbjZ9Q=, tarball: '@cloudbase/ui-react/download/@cloudbase/ui-react-1.0.5.tgz'}
+    peerDependencies:
+      react: ^17.0.2
+    dependencies:
+      react: 17.0.2
+      weui: 1.1.3
+    dev: false
+
+  /@cloudbase/utilities/1.3.4:
+    resolution: {integrity: sha1-QNgo/ZpWHCvkn+Es2k4ff69rleI=, tarball: '@cloudbase/utilities/download/@cloudbase/utilities-1.3.4.tgz'}
+    dependencies:
+      '@cloudbase/adapter-interface': 0.4.1
+      '@cloudbase/types': 1.1.3-alpha.0
+      crypto-js: 3.3.0
     dev: false
 
   /@csstools/normalize.css/12.0.0:
@@ -2907,6 +3012,10 @@ packages:
     resolution: {integrity: sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=, tarball: balanced-match/download/balanced-match-1.0.2.tgz}
     dev: false
 
+  /base64-js/1.5.1:
+    resolution: {integrity: sha1-GxtEAWClv3rUC2UPCVljSBkDkwo=, tarball: base64-js/download/base64-js-1.5.1.tgz}
+    dev: false
+
   /batch/0.6.1:
     resolution: {integrity: sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==, tarball: batch/download/batch-0.6.1.tgz}
     dev: false
@@ -3001,12 +3110,26 @@ packages:
       node-int64: 0.4.0
     dev: false
 
+  /bson/4.6.1:
+    resolution: {integrity: sha512-I1LQ7Hz5zgwR4QquilLNZwbhPw0Apx7i7X9kGMBTsqPdml/03Q9NBtD9nt/19ahjlphktQImrnderxqpzeVDjw==, tarball: bson/download/bson-4.6.1.tgz}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      buffer: 5.7.1
+    dev: false
+
   /buffer-from/1.1.2:
     resolution: {integrity: sha1-KxRqb9cugLT1XSVfNe1Zo6mkG9U=, tarball: buffer-from/download/buffer-from-1.1.2.tgz}
     dev: false
 
   /buffer-indexof/1.1.1:
     resolution: {integrity: sha1-Uvq8xqYG0aADAoAmSO9o9jnaJow=, tarball: buffer-indexof/download/buffer-indexof-1.1.1.tgz}
+    dev: false
+
+  /buffer/5.7.1:
+    resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==, tarball: buffer/download/buffer-5.7.1.tgz}
+    dependencies:
+      base64-js: 1.5.1
+      ieee754: 1.2.1
     dev: false
 
   /builtin-modules/3.2.0:
@@ -3161,6 +3284,12 @@ packages:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
+    dev: false
+
+  /cloudbase-adapter-wx_mp/0.2.0:
+    resolution: {integrity: sha1-Ib2BrOyFI3Pui2KrTeV+U17sAFk=, tarball: cloudbase-adapter-wx_mp/download/cloudbase-adapter-wx_mp-0.2.0.tgz}
+    dependencies:
+      '@cloudbase/adapter-interface': 0.4.1
     dev: false
 
   /co/4.6.0:
@@ -3354,6 +3483,10 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: false
+
+  /crypto-js/3.3.0:
+    resolution: {integrity: sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==, tarball: crypto-js/download/crypto-js-3.3.0.tgz}
     dev: false
 
   /crypto-random-string/2.0.0:
@@ -4834,6 +4967,12 @@ packages:
     hasBin: true
     dev: false
 
+  /history/5.2.0:
+    resolution: {integrity: sha512-uPSF6lAJb3nSePJ43hN3eKj1dTWpN9gMod0ZssbFTIsen+WehTmEadgL+kg78xLJFdRfrrC//SavDzmRVdE+Ig==, tarball: history/download/history-5.2.0.tgz}
+    dependencies:
+      '@babel/runtime': 7.16.7
+    dev: false
+
   /hoopy/0.1.4:
     resolution: {integrity: sha1-YJIH1mEQADOpqUAq096mdzgcGx0=, tarball: hoopy/download/hoopy-0.1.4.tgz}
     engines: {node: '>= 6.0.0'}
@@ -5015,6 +5154,10 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       harmony-reflect: 1.6.2
+    dev: false
+
+  /ieee754/1.2.1:
+    resolution: {integrity: sha1-jrehCmP/8l0VpXsAFYbRd9Gw01I=, tarball: ieee754/download/ieee754-1.2.1.tgz}
     dev: false
 
   /ignore/4.0.6:
@@ -6081,6 +6224,10 @@ packages:
       p-locate: 5.0.0
     dev: false
 
+  /lodash.clonedeep/4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==, tarball: lodash.clonedeep/download/lodash.clonedeep-4.5.0.tgz}
+    dev: false
+
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=, tarball: lodash.debounce/download/lodash.debounce-4.0.8.tgz}
     dev: false
@@ -6093,12 +6240,20 @@ packages:
     resolution: {integrity: sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=, tarball: lodash.merge/download/lodash.merge-4.6.2.tgz}
     dev: false
 
+  /lodash.set/4.3.2:
+    resolution: {integrity: sha1-2HV7HagH3eJIFrDWqEvqGnYjCyM=, tarball: lodash.set/download/lodash.set-4.3.2.tgz}
+    dev: false
+
   /lodash.sortby/4.7.0:
     resolution: {integrity: sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==, tarball: lodash.sortby/download/lodash.sortby-4.7.0.tgz}
     dev: false
 
   /lodash.uniq/4.5.0:
     resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=, tarball: lodash.uniq/download/lodash.uniq-4.5.0.tgz}
+    dev: false
+
+  /lodash.unset/4.5.2:
+    resolution: {integrity: sha1-Nw0dPoW3Kn4bDN8tJyEhMG8j5O0=, tarball: lodash.unset/download/lodash.unset-4.5.2.tgz}
     dev: false
 
   /lodash/4.17.21:
@@ -7610,6 +7765,27 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /react-router-dom/6.2.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-I6Zax+/TH/cZMDpj3/4Fl2eaNdcvoxxHoH1tYOREsQ22OKDYofGebrNm6CTPUcvLvZm63NL/vzCYdjf9CUhqmA==, tarball: react-router-dom/download/react-router-dom-6.2.1.tgz}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      history: 5.2.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-router: 6.2.1_react@17.0.2
+    dev: false
+
+  /react-router/6.2.1_react@17.0.2:
+    resolution: {integrity: sha512-2fG0udBtxou9lXtK97eJeET2ki5//UWfQSl1rlJ7quwe6jrktK9FCCc8dQb5QY6jAv3jua8bBQRhhDOM/kVRsg==, tarball: react-router/download/react-router-6.2.1.tgz}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      history: 5.2.0
+      react: 17.0.2
+    dev: false
+
   /react-scripts/5.0.0_react@17.0.2:
     resolution: {integrity: sha512-3i0L2CyIlROz7mxETEdfif6Sfhh9Lfpzi10CtcGs1emDQStmZfWjJbAIMtRD0opVUjQuFWqHZyRZ9PPzKCFxWg==, tarball: react-scripts/download/react-scripts-5.0.0.tgz}
     engines: {node: '>=14.0.0'}
@@ -8219,23 +8395,28 @@ packages:
     deprecated: See https://github.com/lydell/source-map-url#deprecated
     dev: false
 
+  /source-map/0.5.6:
+    resolution: {integrity: sha1-dc449SvwczxafwwRjYEzSiu19BI=, tarball: source-map/download/source-map-0.5.6.tgz?cache=0&sync_timestamp=1632822727980&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsource-map%2Fdownload%2Fsource-map-0.5.6.tgz}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /source-map/0.5.7:
-    resolution: {integrity: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=, tarball: source-map/download/source-map-0.5.7.tgz?cache=0&sync_timestamp=1632822727980&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsource-map%2Fdownload%2Fsource-map-0.5.7.tgz}
+    resolution: {integrity: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=, tarball: source-map/download/source-map-0.5.7.tgz}
     engines: {node: '>=0.10.0'}
     dev: false
 
   /source-map/0.6.1:
-    resolution: {integrity: sha1-dHIq8y6WFOnCh6jQu95IteLxomM=, tarball: source-map/download/source-map-0.6.1.tgz?cache=0&sync_timestamp=1632822727980&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsource-map%2Fdownload%2Fsource-map-0.6.1.tgz}
+    resolution: {integrity: sha1-dHIq8y6WFOnCh6jQu95IteLxomM=, tarball: source-map/download/source-map-0.6.1.tgz}
     engines: {node: '>=0.10.0'}
     dev: false
 
   /source-map/0.7.3:
-    resolution: {integrity: sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=, tarball: source-map/download/source-map-0.7.3.tgz?cache=0&sync_timestamp=1632822727980&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsource-map%2Fdownload%2Fsource-map-0.7.3.tgz}
+    resolution: {integrity: sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=, tarball: source-map/download/source-map-0.7.3.tgz}
     engines: {node: '>= 8'}
     dev: false
 
   /source-map/0.8.0-beta.0:
-    resolution: {integrity: sha1-1MG7QsP37pJfAFknuhBwng0dHxE=, tarball: source-map/download/source-map-0.8.0-beta.0.tgz?cache=0&sync_timestamp=1632822727980&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsource-map%2Fdownload%2Fsource-map-0.8.0-beta.0.tgz}
+    resolution: {integrity: sha1-1MG7QsP37pJfAFknuhBwng0dHxE=, tarball: source-map/download/source-map-0.8.0-beta.0.tgz}
     engines: {node: '>= 8'}
     dependencies:
       whatwg-url: 7.1.0
@@ -8243,6 +8424,12 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha1-6oBL2UhXQC5pktBaOO8a41qatMQ=, tarball: sourcemap-codec/download/sourcemap-codec-1.4.8.tgz}
+    dev: false
+
+  /sourcemapped-stacktrace/1.1.11:
+    resolution: {integrity: sha1-4t7ef8FIWZxSpPiDJ25Sf4RSZX0=, tarball: sourcemapped-stacktrace/download/sourcemapped-stacktrace-1.1.11.tgz}
+    dependencies:
+      source-map: 0.5.6
     dev: false
 
   /spdy-transport/3.0.0:
@@ -9120,6 +9307,10 @@ packages:
   /websocket-extensions/0.1.4:
     resolution: {integrity: sha1-f4RzvIOd/YdgituV1+sHUhFXikI=, tarball: websocket-extensions/download/websocket-extensions-0.1.4.tgz}
     engines: {node: '>=0.8.0'}
+    dev: false
+
+  /weui/1.1.3:
+    resolution: {integrity: sha1-DwiZu2G7LsYDsmSDZ6gTkpj4FRQ=, tarball: weui/download/weui-1.1.3.tgz}
     dev: false
 
   /whatwg-encoding/1.0.5:
